@@ -80,7 +80,7 @@ DATABASES = {
 	    'HOST': 'ec2-18-214-195-34.compute-1.amazonaws.com',
 	    'PORT':  5432,
 	    'USER': 'tiwisppjbkcxnf',
-	    'PASSWORD': '8354713c457dbf7f21911b4aef44be2e75bd6a382279cb2926bb1df6406712cd',
+	    'PASSWORD': os.environ.get('PASSWORD', ''),
     }
 }
 
