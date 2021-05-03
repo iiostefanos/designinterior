@@ -75,11 +75,14 @@ WSGI_APPLICATION = 'designinterior.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': 'dcpb0e1u2c6c9m',
+	    'HOST': 'ec2-18-214-195-34.compute-1.amazonaws.com',
+	    'PORT':  5432,
+	    'USER': 'tiwisppjbkcxnf',
+	    'PASSWORD': '8354713c457dbf7f21911b4aef44be2e75bd6a382279cb2926bb1df6406712cd',
     }
 }
-
 
 # Password validation
 # https://docs.djangoproject.com/en/3.2/ref/settings/#auth-password-validators
